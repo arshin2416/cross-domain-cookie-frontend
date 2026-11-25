@@ -20,7 +20,7 @@ function App() {
       const data = await response.json();
       setStatus(data.message);
     } catch (err) {
-      setStatus('Error connecting to backend. Is port 5000 running?');
+      setStatus(err);
     }
   };
 
